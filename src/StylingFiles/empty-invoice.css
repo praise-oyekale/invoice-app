@@ -1,0 +1,11 @@
+.emptyinvoice{
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+}
+
+@media (min-width: 768px){
+    .emptyinvoice{
+        width: 25%;
+    }
+}

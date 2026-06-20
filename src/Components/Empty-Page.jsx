@@ -1,14 +1,12 @@
 import emptyInvoice from "../assets/emptyinvoice.svg";
+import '../StylingFiles/empty-invoice.css'
 
 function EmptyInvioce() {
   return (
     <div style={{  height: "62vh" }}>
       <div
-        style={{
-          margin: "auto",
-          width: "20%",
-          marginTop: "100px",
-        }}
+      className="emptyinvoice"
+        
       >
         <img
           src={emptyInvoice}
