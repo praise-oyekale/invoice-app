@@ -6,7 +6,7 @@ function EmptyInvioce() {
       <div
         style={{
           margin: "auto",
-          width: "50%",
+          width: "20%",
           marginTop: "100px",
         }}
       >
