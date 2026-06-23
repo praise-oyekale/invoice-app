@@ -1,0 +1,132 @@
+.invoice-list-container {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+.invoice-lists-card {
+  background-color: white;
+  width: 100%;
+  /* height: 134px; */
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.invoice-list-section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hash {
+  color: blue;
+}
+.client-name {
+  font-weight: 500;
+  font-size: 13px;
+  color: #858bb2;
+  letter-spacing: -0.1px;
+}
+.due-date{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+}
+.list-payment-due {
+  font-weight: 500;
+  font-size: 13px;
+  color: #858bb2;
+}
+.invoice-list-section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+:root {
+  --color-paid-bg: rgba(51, 214, 159, 0.1);
+  --color-paid-text: #33d697;
+
+  --color-pending-bg: rgba(255, 143, 0, 0.1);
+  --color-pending-text: #ff9f00;
+
+  --color-draft-bg: rgba(55, 59, 83, 0.06);
+  --color-draft-text: #373b53
+}
+
+[data-theme="dark"] {
+  --color-paid-bg: rgba(51, 214, 159, 0.2);
+   --color-paid-text: #33d69f;
+
+  --color-pending-bg: rgba(255, 143, 0, 0.2);
+   --color-pending-text: #ffb13b;
+
+  --color-draft-bg: rgba(223, 227, 250, 0.1);
+   --color-draft-text: #dfe3fa;
+}
+.status-pill-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 20px;
+    font-weight: 700;
+  align-content: center;
+  border: none;
+  border-radius: 6px;
+}
+
+[data-theme="dark"] .invoice-lists-card {
+  background-color: #1e2139;
+}
+[data-theme="dark"] .hash {
+  color: #858bb2;
+}
+
+[data-theme="dark"] .client-name {
+  color: white;
+}
+[data-theme="dark"] .list-payment-due {
+  color: white;
+}
+
+
+
+@media (min-width: 768px) {
+  .invoice-lists-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .invoice-list-section1{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+  }
+  .invoice-list-section2{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+  }
+  .due-date{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .invoice-list-container {
+    padding-left: 150px;
+    padding-bottom: 64px;
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}

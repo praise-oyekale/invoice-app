@@ -1,0 +1,43 @@
+.invoice-header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: auto;
+    margin-top: 90px;
+    
+}
+
+.drop-down{
+    background-color: #F8F8FB;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+[data-theme="dark"] .drop-down{
+    background-color:  #141625;
+}
+
+[data-theme="dark"] .drop-down strong{
+    color: white;
+}
+
+@media (min-width: 1024px) {
+  .invoice-header-container{
+    padding-left: 150px;
+    padding-bottom: 64px;
+    max-width: 880px;
+    padding-top: 74px;
+
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+    .invoice-header-container{
+        max-width: 880px;
+    }
+}

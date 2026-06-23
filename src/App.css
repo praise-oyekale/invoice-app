@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Trebuchet MS",
+    sans-serif;
+}
+
+
+body {
+  background-color: #f8f9fa; /* Light theme body layout background */
+  color: #0c0e16;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+[data-theme="dark"] body {
+  background-color: #141625; 
+  color: #ffffff;
+}
+
+
+/* .invoice-list-card {
+  background-color: #ffffff;
+      width: 100%;
+    height: 134px;
+    border-radius: 5px;
+    padding: 20px;
+  transition: background-color 0.25s ease-in-out;
+}
+
+
+[data-theme="dark"] .invoice-list-card{
+  background-color: #1e2139; 
+}
+
+
+[data-theme="dark"] .invoice-list-id{
+    color: #ffffff;
+}
+[data-theme="dark"] .invoice-list-section1 .client-name {
+  color: #ffffff;
+}
+
+
+.details-status-bar,
+.details-main-content-card {
+  background-color: #ffffff;
+  transition: background-color 0.25s ease-in-out;
+} */
+
+
+[data-theme="dark"] .details-status-bar,
+[data-theme="dark"] .details-main-content-card {
+  background-color: #1e2139;
+}
+
+/* The Nested Inner Item Cost Summary Calculation Tray Box (Image 50509f00) */
+.item-summary-table-box {
+  background-color: #f9fafe;
+}
+[data-theme="dark"] .item-summary-table-box {
+  background-color: #252945; /* Lighter navy tone contrast for item listings */
+}
+
+/* The Grand Total Dark Ribbon Bottom Bar (Image 50509f00) */
+.grand-total-footer-bar {
+  background-color: #373b53; /* Default light mode dark background */
+}
+[data-theme="dark"] .grand-total-footer-bar {
+  background-color: #0c0e16; /* Pitch dark black accent block on dark mode */
+}
+
+/* ========================================================
+   4. FORM CREATOR/EDIT INPUT DRAWERS (Image 04775121)
+   ======================================================== */
+.form-container-drawer {
+  background-color: #ffffff;
+}
+[data-theme="dark"] .form-container-drawer {
+  background-color: #141625; /* Matches full app background theme */
+}
+
+/* Input Fields text box components */
+.form-group input {
+  background-color: #ffffff;
+  border: 1px solid #dfe3fa;
+  color: #0c0e16;
+}
+
+[data-theme="dark"] .form-group input {
+  background-color: #1e2139;
+  border: 1px solid #252945;
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
+  --bg-app: #f8f9fa;
+  --bg-card: #ffffff;
+  --text-main: #0c0e16;
+  --text-secondary: #8586ad;
+  
+}
+
+[data-theme="dark"] {
+  --bg-app: #141625;
+  --bg-card: #1e2139;
+  --text-main: #ffffff;
+  --text-secondary: #888eb0;
+} */
+
+/* body {
+  background-color: #f8f9fa;
+  color: #0c0e16;
+  transition:
+    background-color 0.25s ease-in-out,
+    color 0.25s ease-in-out;
+  margin: 0;
+  font-family: "League Spartan" sans-serif;
+}
+[data-theme="dark"] body {
+  background-color: #141625;
+  color: #ffffff;
+}
+.invoice-lists-card {
+  background-color: #ffffff;
+  width: 100%;
+  height: 134px;
+  border-radius: 5px;
+  padding: 20px;
+  transition: background-color 0.25s ease-in-out;
+}
+[data-theme="dark"] .invoice-lists-card {
+  background-color: #1e2139;
+}
+[data-theme="dark"] .invoice-list-section1 h5,
+[data-theme="dark"] .invoice-list-section1 .client-name {
+  color: #ffffff;
+}
+
+.nav-container {
+  background-color: #1e2139;
+}
+
+[data-theme="dark"] .nav-container {
+  background-color: #1c1f30;
+}
+.invoice-list-container,
+.details-view-container {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  transition: background-color 0.3s ease;
+} */
+
+/* body {
+  background-color: #f8f8fb;
+} */

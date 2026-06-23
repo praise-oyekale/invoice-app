@@ -1,0 +1,162 @@
+.invoice-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  transition: opacity 0.4s ease;
+}
+
+.invoice-form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 616px;
+  height: 100vh;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  transition:
+    transform 0.4s ease,
+    backgroung-color 0.3s ease,
+    color 0.25s ease;
+  border-radius: 0 20px 20px 0;
+}
+
+[data-theme="dark"] .invoice-form-container {
+  background-color: #141625;
+}
+.invoice-form-container form{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding: 32px 4px 120px 4px;
+}
+
+.whitecolor {
+  background-color: #f8f8fb;
+}
+.lightwhite {
+  background-color: #ffffff;
+}
+
+[data-theme="dark"] .whitecolor,
+[data-theme="dark"] .lightwhite {
+  background-color: #141625;
+  color: white;
+}
+
+.form-heading {
+  /* margin-top: 20px; */
+  font-size: 24px;
+}
+.form-label {
+  color: #7e88c3;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-bottom: 5px;
+}
+[data-theme="dark"] .form-label {
+  color: #555a73;
+}
+
+.forms-label-inputContainer {
+  margin-top: 15px; 
+  display: flex;
+  flex-direction: column;
+}
+.full-width-input {
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid #dfe3fa;
+  background-color: #ffffff;
+  font-weight: 700;
+  outline: none;
+}
+[data-theme="dark"] .full-width-input {
+  background-color: #1e2139;
+  border: 1px solid #1e2139;
+  color: white;
+}
+
+.city-inputs-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-city-container {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.city-input {
+  width: 100%;
+  padding: 9px;
+  border-radius: 4px;
+  border: 1px solid #dfe3fa;
+  background-color: #ffffff;
+  font-weight: 700;
+  outline: none;
+}
+
+[data-theme="dark"] .city-input {
+  background-color: #1e2139;
+  border: 1px solid #1e2139;
+  color: white;
+}
+
+.item-list-prices {
+  display: grid;
+  grid-template-columns: 15% 30% 25% 10%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.item-price-input {
+  border-radius: 4px;
+  border: 1px solid #dfe3fa;
+  background-color: #ffffff;
+  font-weight: 700;
+  outline: none;
+  padding: 5px;
+}
+[data-theme="dark"] .item-price-input {
+  background-color: #1e2139;
+  border: 1px solid #1e2139;
+  color: white;
+}
+
+.add-itm-btn {
+  background-color: #f9fafe;
+}
+[data-theme="dark"] .add-itm-btn {
+  background-color: #1e2139;
+}
+
+/* @media (min-width: 768px) {
+ .invoice-form-container fo
+} */
+
+@media (min-width: 1024px) {
+  .invoice-form-container {
+    left: 90px;
+    width: calc(100% - 90px);
+    border-radius: 0 20px 20px 0;
+  }
+  .invoice-form-overlay {
+    left: 90px;
+    width: calc(100vw - 90px);
+  }
+}

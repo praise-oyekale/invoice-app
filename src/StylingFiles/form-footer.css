@@ -1,0 +1,117 @@
+.form-footer {
+  width: 100%;
+  height: 110px;
+  background-color: #ffffff;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.05);
+  z-index: 110;
+}
+.desktop-footer {
+  display: none;
+}
+.view-btns {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 91px;
+  background-color: white;
+
+
+
+  display: flex;
+  justify-content: space-around;
+  gap: 7px;
+}
+[data-theme="dark"] .form-footer {
+  background-color: #161722;
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, 0.3);
+}
+.form-footer.drawer-form-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 20px 0;
+}
+.form-footer.details-page-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.cancel-btn {
+  background-color: #f8f8fb;
+}
+
+[data-theme="dark"] .cancel-btn {
+  background-color: #252945;
+}
+
+.discard-btn {
+  background-color: #f8f8fb;
+}
+[data-theme="dark"] .discard-btn {
+  background-color: #252945;
+}
+.edit-btn {
+  background-color: #f8f8fb;
+}
+[data-theme="dark"] .edit-btn {
+  background-color: #252945;
+}
+.delete-btn {
+  background-color: red;
+}
+[data-theme="dark"] .delete-btn {
+  background-color: #ec5757;
+}
+
+.edit-btns-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+.create-btns-container {
+  display: flex;
+  gap: 7px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .form-footer{
+    padding: 24px 56px;
+  }
+  .form-footer.details-page-footer{
+    display: none;
+  }
+  .create-btns-container,
+  .view-btns{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .desktop-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* display: block; */
+  }
+ 
+  /* .create-btns-container {
+    width: 616px;
+    margin-left: 210px;
+  } */
+   .edit-btns-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+   }
+}
