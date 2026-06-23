@@ -121,9 +121,10 @@ function InvoiceDetails({
               display: "flex",
               justifyContent: "space-between",
               width: "100%",
+              gap: '100px',
             }}
           >
-            <div>
+            <div className="dates-section">
               <div className="invoice-creation-date">
                 <h5 style={{ fontSize: "13px" }}>Invoice Date</h5>
                 <h4 style={{ fontSize: "15px", marginTop: "10px" }}>
